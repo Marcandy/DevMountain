@@ -25,7 +25,7 @@
     <input type="text" placeholder="genre" ng-model="genre">
      Artist Score:
     <input type="number" placeholder="0 - 100" ng-model="score">
-    <button type="submit" ng-click="addArtist()"> Add </button>
+    <button type="submit" ng-click="addArtist({name: name, genre: genre, score: score})"> Add </button>
   </form>
 
   <section class="list-main-container">
