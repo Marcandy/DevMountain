@@ -22,7 +22,11 @@ angular.module('userProfiles').service('mainService', function($http) {
   ];
 
   this.getUsers = function() {
-    return data;
+    return $http.get('http://reqres.in/api/users?page=1')
+      .then(function (response) {
+          return response.data.data;
+      })
+
   };
 
 
