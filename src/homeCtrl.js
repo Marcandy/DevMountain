@@ -1,7 +1,7 @@
 angular.module('Starship')
 .controller('homeCtrl', function ($scope, starshipService) {
 
-  $scope.characters = [];
+
 
   $scope.getCharacters = function() {
     starshipService
@@ -14,6 +14,25 @@ angular.module('Starship')
         console.error('something broke' + error);
       });
   }
-  $scope.getCharacters();
 
+  $scope.getStarships = function (starshipUrlList) {
+    starshipService
+    .getStarships(starshipUrlList)
+    .then(function (starships) {
+      console.log(starships);
+      $scope.starships = starships;
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+  }
+
+
+
+  function init() {
+   $scope.characters = [];
+   $scope.starships = [];
+   $scope.getCharacters();
+ }
+ init();
 });
