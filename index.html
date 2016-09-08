@@ -8,17 +8,18 @@
 </head>
 <body ng-controller='homeCtrl'>
 
+
 <main class="wrapper">
 	<div class="characters">
-		<button class="btn btn-primary">Next Page</button>
+		<button ng-click='getCharacters()' class="btn btn-primary">Next Page</button>
 		<ul class="character-list">
-			<li>
+			<li ng-repeat='character in characters'>
 				<div class="character">
-					<h3>Luke Skywalker</h3>
-					<p>Gender: Male</p>
-					<p>Hair Color: Blond</p>
-					<p>Eye Color: Blue</p>
-					<button class="btn btn-primary">Get 2 starships.</button>
+					<h3>{{character.name}}</h3>
+					<p>Gender: {{character.gender}}</p>
+					<p>Hair Color: {{character.hair_color}}</p>
+					<p>Eye Color: {{character.eye_color}}</p>
+					<button class="btn btn-primary">Get {{character.starships.length}} starships.</button>
 				</div>
 				<hr />
 			</li>
