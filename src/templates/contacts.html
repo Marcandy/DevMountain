@@ -1,0 +1,23 @@
+<main class="contacts-wrapper">
+	<table class="table table-bordered table-hover">
+		<tr>
+			<td>Name</td>
+			<td>Company</td>
+			<td>Email</td>
+			<td>Phone #</td>
+		</tr>
+
+	 <!-- when someone clicks on a cnontact
+ go to draft state
+with param of the contact email -->
+
+
+
+		<tr ng-repeat='contact in contacts'>
+			<td>{{contact.name}}</td>
+			<td>{{contact.company}}</td>
+			<td>{{contact.email}}</td>
+			<td>{contact.email}</td>
+		</tr>
+	</table>
+</main>
