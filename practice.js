@@ -96,7 +96,7 @@ const lastFive = [ 6, 7, 8, 9, 10 ];
 
 // using the spread operator, create a new array named oneThroughTen.
 // You should use the above arrays (and 2 missing digits of your own)
-
+const oneThroughTen = [...firstThree, 4, 5, ...lastFive];
 
 // do not modify
 const jsVersions = [ "es5", "es6", "es2017 onward" ];
