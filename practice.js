@@ -83,7 +83,7 @@ const vocabAgain = [ "let", "const", "destructuring", "spread", "rest", "arrow f
 
 // using assignment destructuring, create three variables notAVar, alsoNotVar, and everythingElse
 // notVar should be "let", alsoNotVar should be "const", and everythingElse should contain the rest of the array.
-const [notvar, alsoNotVar, ...everythingElse] = vocabAgain;
+const [notVar, alsoNotVar, ...everythingElse] = vocabAgain;
 
 
 ////////////
@@ -110,7 +110,7 @@ function whatToUse( past, present, future ) {
 
 // using the spread operator, pass each element of jsVersions as an individual argument to whatToUse
 // and save the return value in a variable named currentJS.
-
+const currentJS = whatToUse(...jsVersions);
 
 
 ///////////////
