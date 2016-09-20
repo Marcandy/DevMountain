@@ -27,11 +27,12 @@ vocab.push("arrow function");
 //////////////////////
 
 // Declare 2 new variables, first and last, and assign them your first and last name.
-
+let first = 'Marc-Adndy';
+let last = 'Noel Jeune';
 
 
 // Declare the variable fullName and set it equal to your full name using template literals
-
+ let fullName = `${first} ${last}`;
 
 
 //////////////////////
