@@ -134,7 +134,7 @@ function toPower (number, exponent = 2) {
 // any number of parameters and returns an object with two properties - even and odd.
 // this function should check each parameter and push it to the appropriate property.
 function evenOdd(...items) {
-	let obj = { even: [], odd: [] };
+	const obj = { even: [], odd: [] };
 
 	items.forEach(function (num) {
 		if(num % 2 === 0){
@@ -159,7 +159,13 @@ function evenOdd(...items) {
 // write a function named multiply that takes in a num parameter and an arbitrary amount of
 // additional numbers. This function should return an array of each additional number
 // multiplied by num.
-
+function multiply(num, ...mor) {
+	let arr = []
+	mor.forEach(function (por) {
+		arr.push(por * num);
+	})
+	return arr;
+}
 
 
 // do not modify
