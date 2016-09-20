@@ -43,12 +43,22 @@ let last = 'Noel Jeune';
 // first and last should use object literal shorthand (with the variables created above),
 // and lovesDevMountain should be set to true.
 // learnES6 should be a method created with object method shorthand that returns "This is awesome!"
-
+const me = {
+	first,
+	last,
+	learnES6 () {
+		return 'This is awesome!';
+	},
+	lovesDevMountain: true
+}
 
 
 // using computed property names create a new object named flipped where the keys are your first and last name
 // and the values are "first" and "last"
-
+const flipped = {
+	[first]: 'first',
+	[last]: 'last'
+}
 
 //////////////////////////////
 /* ASSIGNMENT DESTRUCTURING */
