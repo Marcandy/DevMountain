@@ -133,18 +133,26 @@ function toPower (number, exponent = 2) {
 // using rest parameters, write a function named evenOdd that takes in
 // any number of parameters and returns an object with two properties - even and odd.
 // this function should check each parameter and push it to the appropriate property.
-function evenOdd(...rest) {
-	let obj = { even, odd};
-	...rest.forEach(function (num) {
-		if(num % 2 === 0){
+function evenOdd(...items) {
+	let obj = { even: [], odd: [] };
 
+	items.forEach(function (num) {
+		if(num % 2 === 0){
+			obj.even.push(num)
+		}
+		else {
+			obj.odd.push(num)
 		}
 	})
-
-	return {
-		even,
-		odd
-	}
+	// for (var i = 0; i < ...items.lengh){
+	// 	if(item % 2 === 0){
+	// 	 		obj.even.push(parseInt(item))
+	// 		}
+	// 	 else {
+	// 			obj.odd.push(parseInt(item))
+	// 		}
+	// 	}
+		return obj;
 }
 
 
