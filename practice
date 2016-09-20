@@ -1,0 +1,103 @@
+let me = 'Ryan';
+let is similar var but is block scope
+
+same a const 
+
+string interpalation with `
+template string
+
+const myName = 'Ryan';
+const job = 'Lead Instrutor';
+
+const person = {
+	myName
+	, job
+	, hungry : true
+}
+
+function makeObj(keyOne, keyTwo) {
+	const ret = {
+		[keyOne]: 'wit'
+		, keyTwo: one
+	}
+	return ret;
+}
+
+
+const me = {
+	name: 'Marc'
+	, job: 'teacher'
+};
+
+// var name = me.name;
+
+const { name } = me;
+console.log(name);
+
+const mentors = ['Taryn', 'Dontavious', 'joe'];
+
+console.lo
+
+function makePerson(name, job = 'unemployed') {
+	if(job === undefined){
+		job = 'no'
+	}
+}
+
+function greetEveryone(customg, ...names) {
+}
+
+
+
+[3, 5, 8].filter(function(num){
+	
+})
+
+
+//arrow function
+
+const evens = [1, 2 , 5].filter(num => num % 2 === 0);
+
+//arrow functin dont care about the keyword this 
+
+[2, 3, 4].forEach(num => console.log(num * 2));
+
+
+$scope.submitForm = (data) {
+	
+}
+
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	sayName() {
+		console.log( this.name )
+	}
+}
+
+
+class Adult extends Person {
+	constructor(name, age, job) {
+		super(name, age);
+		this.job = job;
+	}
+	
+	introduceSelt() {
+		console.log(`hello, my is ${this.name}`)
+	}
+}
+
+class Baby extends Person {
+	constructor(name, age) {
+		super(name, age)
+	}
+	cry() {
+		console.log('aaa')
+	}
+}
+
+const sean = new Adult( 'sean', 29, 'web dev');
+
