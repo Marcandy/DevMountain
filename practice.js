@@ -73,7 +73,8 @@ const destructuring = {
 
 // using assignment destructuring create two new variables, objects and arrays,
 // with the values taken from the above object
-
+var {objects} = destructuring;
+var {arrays} = destructuring;
 
 
 
