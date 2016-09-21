@@ -83,7 +83,7 @@ const vocabAgain = [ "let", "const", "destructuring", "spread", "rest", "arrow f
 
 // using assignment destructuring, create three variables notAVar, alsoNotVar, and everythingElse
 // notVar should be "let", alsoNotVar should be "const", and everythingElse should contain the rest of the array.
-const [notVar, alsoNotVar, ...everythingElse] = vocabAgain;
+const [notVar, alsoNotVar, ["destructuring", "spread", "rest", "arrow function"]: everythingElse] = vocabAgain;
 
 
 ////////////
@@ -173,7 +173,7 @@ const bits = [ 2, 4, 8, 16, 32, 64, 128 ];
 
 // using an arrow function and the built in .map method, create a new array
 // named mooresBits. mooresBits should be the bits array doubled.
-
+const mooresBits = bits.map(num => num * 2);
 
 // do not modify
 const that = {
@@ -184,3 +184,4 @@ const that = {
 
 // using an arrow function, add a property named arrow that returns the window object
 // do this without using the window keyword. HINT: The default binding of the this keyword
+that.arrow = () => window;
