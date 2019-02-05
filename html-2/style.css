@@ -1,0 +1,88 @@
+body {
+  overflow: scroll;
+}
+
+.new-message-wrapper {
+  width: 500px;
+  height: 125px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  padding: 20px;
+  position: fixed;
+  left: 20%;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+  background-color: white;
+
+}
+
+.greeting {
+  margin-top: 0;
+}
+
+.new-message-input {
+  width: 90%;
+  height: 2em;
+}
+
+.submit-message:hover {
+  background-color: #92ade0;
+}
+
+.submit-message {
+  margin-right: 25px;
+  margin-top: 5px;
+  height: 25px;
+  }
+
+.align-button {
+  text-align: right;
+}
+
+.new-message-input:focus {
+  outline: none;
+}
+
+.user-list-wrapper {
+  /*margin: 0 auto 0 150px;*/
+  flex: 1;
+  border: 1px solid gray;
+  min-height: 50px;
+  max-height: 200px;
+  overflow: scroll;
+  margin-right: 20px;
+}
+
+main {
+    width: 85%;
+    margin: 145px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+.messages-wrapper {
+flex: 3;
+}
+
+.message {
+  position: relative;
+  margin: 10px 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.timestamp {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  color: gray;
+}
+
+.author-name {
+  margin: 3px 0;
+}
+
+.message-content {
+  margin: 3px;
+}
