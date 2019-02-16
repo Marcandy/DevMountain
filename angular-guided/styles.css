@@ -1,0 +1,13 @@
+header {
+	width: 500px;
+	margin: 40px;
+}
+
+.contacts {
+	width: 95%;
+	margin: 15px auto;
+}
+
+.search-contacts {
+	margin: 10px 0;
+}
