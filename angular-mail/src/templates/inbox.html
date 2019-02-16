@@ -1,0 +1,22 @@
+<main class="inbox-wrapper">
+	<div class="mail-list-wrapper">
+		<ul class="mail-list">
+			<!-- //repeat over mail -->
+			<!-- //add ng click to s -->
+			<ling-repeat='email in mail'  class="message">
+				<h4>{{message.content.slice(0, 15)}}</h4>
+				<p>{{message.name}}</p>
+			</li>
+		</ul>
+	</div>
+
+	<div  class="selected-message">
+		<div ng-show='selectedMessage'>
+			<h3>{{selectedMessage.email}}</h3>
+			<h3>{{selectedMessage.name}}</h3>
+			<p>{{selectedMessage.message}}>
+
+			</select>}}</p>
+		</div>
+	</div>
+</main>
